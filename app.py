@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-import sys
-import os
-sys.path.append(os.path.abspath("services"))
-from translation_service import TranslationService
 
 
 import streamlit as st
@@ -15,7 +10,6 @@ from datetime import datetime
 # Import custom services
 from services.whisper_service import WhisperService
 from services.translation_service import TranslationService
-
 from services.rag_service import RAGService
 from services.dalle_service import DalleService
 from services.tts_service import TTSService
